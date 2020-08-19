@@ -1,17 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Avatar from '@material-ui/core/Avatar';
+import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+
+import profilePicture from './assets/images/profile_picture.jpg'; 
+import './styles/Custom.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
 
-        <h1> Hello from v2</h1>
+  return (
+
+    <Box display="flex" height={1} alignItems="center" justifyContent="center" p={1} bgcolor="colors.orange">
+      
+ 
+      <Box>
+        <Box display="flex" justifyContent="center">
+          <Avatar height={1} style={{height: 120, width: 120}} alt="Eber Alejandro Foto Perfil" src={profilePicture}/>
+        </Box>
+        
+        <h1>Eber A. Martínez Pantoja</h1>
+        <h3>Coming soon!</h3>
+
+      </Box>
+    </Box>
      
-      </header>
-    </div>
   );
 }
 
